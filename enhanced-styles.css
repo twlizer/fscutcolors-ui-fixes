@@ -1,0 +1,113 @@
+/* Enhanced AI UI - Individual Response Styling */
+.enhanced-conversation {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+.enhanced-header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.enhanced-header h3 {
+    color: white;
+    margin: 0 0 10px 0;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.progress-indicator {
+    background: rgba(255,255,255,0.2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.9em;
+    font-weight: 500;
+    display: inline-block;
+    backdrop-filter: blur(10px);
+}
+
+.ai-responses {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ai-response-section {
+    background: rgba(255,255,255,0.95);
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    transform: translateY(0);
+    transition: all 0.3s ease;
+}
+
+.ai-response-section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+}
+
+.ai-response-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.ai-response-header strong {
+    color: #2c3e50;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.loading-spinner {
+    color: #3498db;
+    font-size: 0.9em;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.ai-response-content {
+    color: #34495e;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+.response-text p {
+    margin: 0 0 12px 0;
+}
+
+.response-text p:last-child {
+    margin-bottom: 0;
+}
+
+.typing-indicator {
+    color: #95a5a6;
+    font-style: italic;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .enhanced-conversation {
+        padding: 15px;
+        margin: 8px 0;
+    }
+    
+    .ai-response-section {
+        padding: 12px;
+    }
+    
+    .enhanced-header h3 {
+        font-size: 1.1em;
+    }
+}
